@@ -1,0 +1,31 @@
+.dDiv{
+    color: violet;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.dialogsItems{
+  
+
+}
+.dialog{
+  padding: 10px;
+}
+.dialog a{
+  color: bisque;
+  text-decoration: none;
+}
+.dialog a:hover{
+  color: brown;
+}
+.dialogsItems .active{
+    color: yellowgreen;
+  }
+.messages{
+  color: bisque;
+
+}
+.message{
+    padding: 10px;
+    
+
+}
