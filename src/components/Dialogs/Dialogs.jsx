@@ -4,14 +4,10 @@ import dia from "./Dialogs.module.css";
 import Message from './Message/Message';
 
 const Dialogs = (props) => {
-
-
-    let newNamesArr = props.state.dialogsArr.map((el) => {
+    let newNamesArr = props.dia.namesArr.map((el) => {
         return <DialogItem name={el.name} number={el.id} />
     })
-
-
-    let newMessArr = props.state.messageArr.map((ell) => {
+    let newMessArr = props.dia.messageArr.map((ell) => {
         return <Message text={ell.message} />
     })
 

@@ -7,17 +7,21 @@ import Content from './components/Profile/Profile.jsx';
 import { BrowserRouter, Route } from "react-router-dom";
 
 const App = (props) => {
-  
+
   return (
     <BrowserRouter>
       <div className="grid">
+       
         <Header />
-        <Nav />
+        <Nav fre = {props.state.navPage}/>
         <div className="content_wrapper">
-          <Route path='/profile' render = { () => <Content state = {props.state.profilePage}/> }  /> 
-          <Route path='/dialogs' render = { () => <Dialogs state = {props.state.dialogsPage} /> } />
+          <Route path='/profile' render = { () => 
+          <Content state = {props.state.profilePage} 
+          addPost = {props.addPost} /> }  />
+          <Route path='/dialogs' render = { () => <Dialogs dia= {props.state.dialogsPage} /> } />
         </div>
-      </div>
+      </div> 
+      
     </BrowserRouter>
   );
 }
