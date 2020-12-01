@@ -39,7 +39,7 @@ let state = {
 }
 
 export let addPost = (postMessage) => {
-    debugger;
+
     let newPost = {
         id: "7", message: postMessage, likesCount: 88
     }
